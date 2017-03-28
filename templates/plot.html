@@ -1,0 +1,24 @@
+<html>
+  <head>
+      
+    <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css" type="text/css" />
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+
+      <h1> {{ ticker | safe }}</h1>
+      {{ div | safe }}
+      {{ script | safe }}
+      {{ error | safe }}
+      <form id='homebutton' method='get' action='index' >
+          <input "btn btn-primary" type='submit' value='Back' />
+      </form>
+
+    </div>
+  </body>
+</html>
